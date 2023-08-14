@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Log in</title>
+</head>
+<body class="body-login">
+    <section class="login">
+        <div class="login__head-block">
+            <div class="head-block__left-block">
+                <a href="./index.php" class="left-block__back">
+                    <i class="ri-arrow-left-s-line"></i>
+                </a>
+                <div class="left-block__link">
+                    <a href="#" class="link__link1">Log in</a>
+                    <a href="./registration.html" class="link__link2">Sign up</a>
+                </div>
+                <form method="post" action="log.php">
+                    <h1>Welcome back!</h1>
+                    <h2>Log in to continue</h2>
+                    <div class="left-block__inputbox first">
+                        <input type="text" required name="login">
+                        <label for="">
+                            <a href="">Enter your login</a>
+                        </label>
+                    </div>
+                    <div class="left-block__inputbox-error">
+                        <p>Error: Login or password is incorrect</p>
+                    </div>
+                    <div class="left-block__inputbox second">
+                        <input type="password" required name="pass">
+                        <label for="">
+                            <a href="">Enter your password</a>
+                        </label>
+                    </div>
+                    <div class="left-block__forget">
+                        <label for="checkbox">Remember me
+                            <input type="checkbox" id="checkbox">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </span>
+                        </label>
+                    </div>
+                    <button class="left-block__btn">Log In</button>
+                </form>
+            </div>
+            <div class="head-block__right-block">
+                <img src="./img/regfon.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/signin.js"></script>
+    <!-- <script src="./js/login.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Registration</title>
+</head>
+<body class="body-registration">
+    <section class="registration">
+        <div class="registration__head-block">
+            <div class="head-block__left-block">
+                <a href="./index.php" class="left-block__back">
+                    <i class="ri-arrow-left-s-line"></i>
+                </a>
+                <div class="left-block__link">
+                    <a href="./login.html" class="link__link1">Log in</a>
+                    <a href="#" class="link__link2">Sign up</a>
+                </div>
+                <form method="post" action="reg.php">
+                <!-- <form method="post" action="mail.php" enctype="multipart/form-data"> -->
+                    <h1>Welcome first time!</h1>
+                    <h2>Register to continue</h2>
+                    <div class="left-block__inputbox first">
+                        <input type="email" required name="email" id="email">
+                        <label for="">
+                            <a href="#">Enter your e-mail</a>
+                        </label>
+                    </div>
+                    <div class="left-block__inputbox second">
+                        <input type="text" required name="login" id="login">
+                        <label for="">
+                            <a href="">Enter your login / nickname</a>
+                        </label>
+                    </div>
+                    <div class="left-block__inputbox-error">
+                        <p>Error: Login is already taken</p>
+                    </div>
+                    <div class="left-block__inputbox third">
+                        <input type="password" required name="pass">
+                        <label for="">
+                            <a href="">Enter your password</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="left-block__btn">Register</button>
+                </form>
+            </div>
+            <div class="head-block__right-block">
+                <img src="./img/regfon.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/signin.js"></script>
+</body>
+</html>

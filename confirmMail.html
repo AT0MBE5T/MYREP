@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Log in</title>
+</head>
+<body class="body-mail">
+    <section class="mail">
+        <div class="mail__head-block">
+            <div class="head-block__left-block">
+                <a href="./registration.html" class="left-block__back">
+                    <i class="ri-arrow-left-s-line"></i>
+                </a>
+                <form method="post" action="#">
+                    <h1>E-Mail</h1>
+                    <h2>Confirmation</h2>
+                    <div class="left-block__inputbox first">
+                        <input type="text" required name="code">
+                        <label for="">
+                            <a href="">Enter a code</a>
+                        </label>
+                    </div>
+                    <div class="left-block__inputbox-error">
+                        <p>Error: Code is incorrect</p>
+                    </div>
+                    <button class="left-block__btn">Confirm</button>
+                </form>
+            </div>
+            <div class="head-block__right-block">
+                <img src="./img/regfon.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/signin.js"></script>
+</body>
+</html>
